@@ -2,9 +2,6 @@
 
 This repo is a program that checks a person's posture and notifies a warning tone when he or she is seen dozing off. We formed a model based on https://github.com/Daniil-Osokin/lightweight-human-pose-estimation.pytorch and inferring the model using openvino. This work heavily optimizes the [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose) approach to reach real-time inference on CPU with negliable accuracy drop. It detects a skeleton (which consists of keypoints and connections between them) to identify human poses for every person inside the image. The pose may contain up to 18 keypoints: ears, eyes, nose, neck, shoulders, elbows, wrists, hips, knees, and ankles. On COCO 2017 Keypoint Detection validation set this code achives 40% AP for the single scale inference (no flip or any post-processing done).
 
-<p align="center">
-  <img src="data/preview.jpg" />
-</p>
 
 ## Table of Contents
 
